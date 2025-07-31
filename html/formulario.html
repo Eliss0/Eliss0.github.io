@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanye West - Formulario</title>
+      <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet"> 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <p> KANYE WEST</p>
+        </div>
+        <nav>
+            <ul>
+                <li> <a href="../index.html" class="inicio3">Inicio</a> </li>
+                <li> <a href="discografia.html" class="discografia3">Discografía</a> </li>
+                <li> <a href="formulario.html" class="formulario3">Formulario</a> </li> </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="seccion-formulario">
+            <h2>Registro para Noticias y Eventos Exclusivos</h2>
+            <p>¡Únete a nuestra comunidad para recibir las últimas novedades, acceso anticipado a noticias y contenido exclusivo de Kanye West!</p>
+            
+            <form action="gracias.html" method="post" enctype="multipart/form-data" class="mi-formulario">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tus Intereses Musicales</legend>
+                    <p>Selecciona los géneros que más te interesan (puedes elegir varios):</p>
+                    <div>
+                        <input type="checkbox" id="hiphop" name="intereses" value="hiphop">
+                        <label for="hiphop">Hip-Hop</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="rap" name="intereses" value="rap">
+                        <label for="rap">Rap</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="soul" name="intereses" value="soul">
+                        <label for="soul">Soul</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="gospel" name="intereses" value="gospel">
+                        <label for="gospel">Gospel</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="electronica" name="intereses" value="electronica">
+                        <label for="electronica">Electrónica</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="otros" name="intereses" value="otros">
+                        <label for="otros">Otros</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿Que otros artistas son de su interes?</legend>
+                    <div>
+                        <input type="checkbox" id="kendrick" name="artistas" value="kendrick">
+                        <label for="kendrick">Kendrick Lamar</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Tyler" name="artistas" value="Tyler">
+                        <label for="Tyler">Tyler, the creator</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Travis" name="artistas" value="Travis">
+                        <label for="Travis">Travis Scott</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="asap" name="artistas" value="A$AP">
+                        <label for="asap">A$AP ROCKY</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="21savage" name="artistas" value="21savage">
+                        <label for="21savage">21 Savage</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Childish" name="artistas" value="Childish">
+                        <label for="Childish">Childish Gambino</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Otros" name="artistas" value="Otros">
+                        <label for="Otros">Otros</label>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Adjuntar Archivo (Opcional)</legend>
+                    <label for="archivo">Adjunta tu single favorito, foto de un evento o documento (Max. 5MB):</label>
+                    <input type="file" id="archivo" name="archivo" accept="image/*, audio/*, .pdf, .doc, .docx" aria-label="Adjuntar archivo">
+                    <p>Formatos aceptados: imágenes, audio, PDF, Word. Límite de tamaño: 5MB.</p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿Que te interesa màs?</legend>
+                    <div>
+                        <input type="checkbox" id="Conciertos" name="eventos" value="Conciertos" >
+                        <label for="Conciertos">Conciertos</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Noticias" name="eventos" value="Noticias">
+                        <label for="Noticias">Noticias</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Entradas" name="eventos" value="Entradas">
+                        <label for="Entradas">Entradas a Conciertos</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Contenido" name="eventos" value="Contenido">
+                        <label for="Contenido">Contenido Exclusivo de Kanye</label>
+                    </div>
+                </fieldset>
+                
+                <label for="comentarios">Comentarios o Preguntas:</label>
+                <textarea id="comentarios" name="comentarios" rows="5" placeholder="Escribe aquí tus comentarios o preguntas adicionales..."></textarea>
+
+                <button type="submit">Enviar Registro</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>    
+        <ul>
+            <li>Alumno: Eliseo Oliva</li>
+            <li>DW1TM – Maquetado y Desarrollo Web</li>
+            <li>Prof. Mabel García</li>
+            <li>Entrega de TP del primer cuatrimestre de la Escuela Da Vinci - 2025</li>
+        </ul>
+    </footer>
+   
+</body>
+</html>
